@@ -1,0 +1,237 @@
+/*Global Rules*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+/* Main */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.main .logo {
+  margin-bottom: 2em;
+}
+
+.main .text {
+  margin-bottom: 2em;
+}
+
+.main .text h1 {
+  font-size: 52px;
+  font-weight: 200;
+  color: #969696;
+  margin-bottom: 16px;
+}
+
+.main .text h1 span {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+}
+
+.main .text p {
+  font-size: 24px;
+}
+
+.main form input {
+  padding: 1em 1.5em;
+  width: 24em;
+  border-radius: 50px;
+  border: 2px solid #8393bc59;
+  margin-right: 15px;
+}
+
+.main form input::-webkit-input-placeholder {
+  color: #8393bc59;
+  font-weight: 100;
+}
+
+.main form input:-ms-input-placeholder {
+  color: #8393bc59;
+  font-weight: 100;
+}
+
+.main form input::-ms-input-placeholder {
+  color: #8393bc59;
+  font-weight: 100;
+}
+
+.main form input::placeholder {
+  color: #8393bc59;
+  font-weight: 100;
+}
+
+.main form input:focus {
+  outline: none;
+}
+
+.main form label {
+  font-size: 14px;
+  font-style: italic;
+  color: #ff5263;
+  position: absolute;
+  left: 29%;
+  top: 44%;
+  visibility: hidden;
+}
+
+.main form button {
+  padding: 1em 3em;
+  color: white;
+  background-color: #4f7df3;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 7px 5px 0 #c2d3ffcf;
+          box-shadow: 0 7px 5px 0 #c2d3ffcf;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main form button:hover {
+  background-color: rgba(79, 125, 243, 0.742);
+}
+
+.main .content-img {
+  width: 35em;
+  margin: 4em;
+}
+
+.main .content-img img {
+  max-width: 100%;
+}
+
+.main .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.main .social-icons i {
+  padding: 20px;
+  font-size: 18px;
+  color: #4f7df3;
+  border: 1px solid #96969638;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.main .social-icons i:hover {
+  background-color: #4f7df3;
+  color: white;
+}
+
+.main .copyright {
+  color: #969696;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .main .text h1,
+  .main .text h1 > span {
+    font-size: 22px;
+  }
+  .main .text p {
+    font-size: 12px;
+  }
+  .main form {
+    display: -ms-grid;
+    display: grid;
+    margin-bottom: -1em;
+  }
+  .main form input,
+  .main form button {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .main form input {
+    padding: 9px 20px;
+    margin-bottom: -35px;
+  }
+  .main form input::-webkit-input-placeholder {
+    font-size: 11px;
+  }
+  .main form input:-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .main form input::-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .main form input::placeholder {
+    font-size: 11px;
+  }
+  .main form label {
+    font-size: 11px;
+    font-style: italic;
+    color: #ff5263;
+    position: relative;
+    left: 0;
+    top: 30%;
+    visibility: hidden;
+    margin-bottom: 7em;
+  }
+  .main form button {
+    padding: 15px 30px;
+    font-size: 12px;
+    margin-top: -45px;
+  }
+  .main .content-img {
+    width: 100%;
+  }
+  .main .content-img img {
+    max-width: 100%;
+  }
+  .main .social-icons i {
+    font-size: 11px;
+    padding: 15px;
+  }
+  .main .copyright {
+    font-size: 11px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

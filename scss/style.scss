@@ -1,0 +1,215 @@
+/*Global Rules*/
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+$blue: hsl(223, 87%, 63%);
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+/* Main */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+
+    .logo {
+        margin-bottom: 2em;
+    }
+
+    .text {
+        margin-bottom: 2em;
+
+        h1 {
+            font-size: 52px;
+            font-weight: 200;
+            color: $gray;
+            margin-bottom: 16px;
+
+            span {
+                font-size: 48px;
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    form {
+        input {
+            padding: 1em 1.5em;
+            width: 24em;
+            border-radius: 50px;
+            border: 2px solid #8393bc59;
+            margin-right: 15px;
+
+            &::placeholder {
+                color: #8393bc59;
+                font-weight: 100;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            font-style: italic;
+            color: $Light-Red;
+            position: absolute;
+            left: 29%;
+            top: 44%;
+            visibility: hidden;
+        }
+
+        button {
+            padding: 1em 3em;
+            color: white;
+            background-color: $blue;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 7px 5px 0 #c2d3ffcf;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: hsla(223, 87%, 63%, 0.742);
+            }
+        }
+    }
+
+    .content-img {
+        width: 35em;
+        margin: 4em;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1em;
+
+        i {
+            padding: 20px;
+            font-size: 18px;
+            color: $blue;
+            border: 1px solid #96969638;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: $blue;
+                color: white;
+            }
+        }
+    }
+
+    .copyright {
+        color: $gray;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        .text {
+
+            h1,
+            h1>span {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        form {
+            display: grid;
+            margin-bottom: -1em;
+
+            input,
+            button {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+
+            input {
+                padding: 9px 20px;
+                margin-bottom: -35px;
+
+                &::placeholder {
+                    font-size: 11px;
+                }
+
+            }
+
+            label {
+                font-size: 11px;
+                font-style: italic;
+                color: $Light-Red;
+                position: relative;
+                left: 0;
+                top: 30%;
+                visibility: hidden;
+                margin-bottom: 7em;
+            }
+
+            button {
+                padding: 15px 30px;
+                font-size: 12px;
+                margin-top: -45px;
+            }
+        }
+
+
+        .content-img {
+            width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .social-icons {
+            i {
+                font-size: 11px;
+                padding: 15px;
+            }
+        }
+
+        .copyright {
+            font-size: 11px;
+        }
+    }
+}
